@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>More Javascript</title>
+		<link rel="stylesheet" href="https://YipuLiu.github.io/aa.css">
+		<script>
+			var musics = [
+				{
+					"SongName": "All Your Fault: Pt. 2",
+					"ArtistName": "Bebe Rexha",
+					"Genre": "pop",
+					"Date of release": "8/18/2017"
+				},
+				{
+					"SongName": "÷ (Deluxe)",
+					"ArtistName": "Ed Sheeran",
+					"Genre": "pop",
+					"Date of release": "3/3/2017"
+				},
+				{
+					
+					"SongName": "The Middle",
+					"ArtistName": "Zedd, Maren Morris & Grey",
+					"Genre": "dance",
+					"Date of release": "1/23/2018"
+				},
+				{
+					
+					"SongName": "You Make It Easy",
+					"ArtistName": "Jason Aldean",
+					"Genre": "country",
+					"Date of release": "1/26/2018"
+				},
+				{
+					
+					"SongName": "Finesse (Remix) [feat. Cardi B]",
+					"ArtistName": "Bruno Mars",
+					"Genre": "R&B / Soul",
+					"Date of release": "1/4/2018"
+				}
+			];
+		</script>
+	</head>
+	<body>
+		<h1>Javascript Looping</h1>
+		<h2>Songs Table</h2>
+		<table id="song"></table><br><br>
+		
+		<script>
+			/*document.write(users[0].First);*/
+			var text = "";
+			var newtext = "";
+			/*var x;*/
+			for (var x in musics) {
+				if (musics.hasOwnProperty(x)) {
+					var obj = musics[x];
+					for (var y in obj) {
+						if (obj.hasOwnProperty(y)) {
+							text += "<tr><td align='right'>" + y + "</td><td>" + obj[y] + "</td></tr>";
+							/*document.write(y + " -> " + obj[y] + '\n');*/
+						}
+					}
+				}
+			}
+			document.getElementById("song").innerHTML = text;
+			document.getElementByID("song").innerHTML = text;
+		</script>
+	</body>
+</html>
