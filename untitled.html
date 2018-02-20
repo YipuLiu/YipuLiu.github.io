@@ -91,10 +91,9 @@
 				return x;
 			}
 			
-			/*document.write(users[0].First);*/
 			var text = "";
 			var newtext = "";
-			/*var x;*/
+			
 			for (var x in musics) {
 				if (musics.hasOwnProperty(x)) {
 					var obj = musics[x];
@@ -112,6 +111,7 @@
 						timecal(musics) + "</td></tr>";
 						
 			document.getElementById("song").innerHTML = text;
+			document.getElementByID("song").innerHTML = text;
 			document.getElementById("statistics").innerHTML = newtext;
 		</script>
 		</div>
