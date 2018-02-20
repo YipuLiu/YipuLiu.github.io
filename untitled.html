@@ -63,7 +63,7 @@
 		
 		<script>
 		
-			function timecal(d) {
+			/*function timecal(d) {
 				var mins = 0;
 				var secs = 0;
 				for (var x in d) {
@@ -89,7 +89,7 @@
 					}
 				}
 				return x;
-			}
+			}*/
 			
 			var text = "";
 			var newtext = "";
@@ -105,14 +105,13 @@
 					}
 				}
 			}
-			newtext += "<tr><td>" + 
+			/*newtext += "<tr><td>" + 
 						generalcal(d) + "</td><td>" +
 						generalcal(d) + "</td><td>" +
-						timecal(musics) + "</td></tr>";
+						timecal(musics) + "</td></tr>";*/
 						
 			document.getElementById("song").innerHTML = text;
-			document.getElementByID("song").innerHTML = text;
-			document.getElementById("statistics").innerHTML = newtext;
+			/*document.getElementById("statistics").innerHTML = newtext;*/
 		</script>
 		</div>
 	</body>
