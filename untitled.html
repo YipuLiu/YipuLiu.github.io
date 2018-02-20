@@ -50,11 +50,19 @@
 		<h1>Javascript Looping</h1>
 		<h2>Songs Table</h2>
 		<table id="song"></table><br><br>
-		
+		<h2>Statistics Table</h2>
+		<table>
+			<thead>
+				<tr><th>Songs</th><th>Artists</th><th>Total Time</th></tr>
+			</thead>
+			<tbody id="statistics">
+				
+			</tbody>
+		</table>
 		
 		<script>
 		
-			/*function timecal(d) {
+			function timecal(d) {
 				var mins = 0;
 				var secs = 0;
 				for (var x in d) {
@@ -80,7 +88,7 @@
 					}
 				}
 				return x;
-			}*/
+			}
 			
 			var text = "";
 			var newtext = "";
@@ -96,13 +104,13 @@
 					}
 				}
 			}
-			/*newtext += "<tr><td>" + 
+			newtext += "<tr><td>" + 
 						generalcal(d) + "</td><td>" +
 						generalcal(d) + "</td><td>" +
-						timecal(musics) + "</td></tr>";*/
+						timecal(musics) + "</td></tr>";
 						
 			document.getElementById("song").innerHTML = text;
-			/*document.getElementById("statistics").innerHTML = newtext;*/
+			document.getElementById("statistics").innerHTML = newtext;
 		</script>
 		</div>
 	</body>
