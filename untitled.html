@@ -62,7 +62,7 @@
 		
 		<script>
 		
-			function timecal(d) {
+			/*function timecal(d) {
 				var mins = 0;
 				var secs = 0;
 				for (var x in d) {
@@ -78,7 +78,7 @@
 				secs = (secs % 60);
 				var n = mins.toString() + ":" + secs.toString();
 				return n;
-			}
+			}*/
 			
 			function generalcal(d) {
 				var x = 0;
@@ -107,7 +107,7 @@
 			newtext += "<tr><td>" + 
 						generalcal(d) + "</td><td>" +
 						generalcal(d) + "</td><td>" +
-						timecal(musics) + "</td></tr>";
+						/*timecal(musics) + "</td></tr>"*/;
 						
 			document.getElementById("song").innerHTML = text;
 			document.getElementById("statistics").innerHTML = newtext;
