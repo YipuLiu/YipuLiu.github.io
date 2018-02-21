@@ -67,9 +67,9 @@
 				for (var x in d) {
 					if (d.hasOwnProperty(x)) {
 						var obj = d[x];
-						var min = obj['Time'].split(":")[0];
-						var sec = obj['Time'].split(":")[1];
-						secs += parseInt(sec) + parseInt(min) * 60 + "<br>";
+						var min = obj['Time'].split(":")[0],
+							sec = obj['Time'].split(":")[1]
+						secs += parseInt(sec) + parseInt(min) * 60;
 					}
 				}
 				var mins = Math.floor(secs / 60);
