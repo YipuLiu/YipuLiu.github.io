@@ -63,21 +63,18 @@
 		<script>
 		
 			function timecal(d) {
-				var mins = 0;
 				var secs = 0;
 				for (var x in d) {
 					if (d.hasOwnProperty(x)) {
 						var obj = d[x];
 						var min = obj['Time'].split(":")[0];
 						var sec = obj['Time'].split(":")[1];
-						mins += parseInt(min) + "<br>";
-						secs += parseInt(sec) + "<br>";
+						secs += parseInt(sec) + parseInt(min) * 60 + "<br>";
 					}
 				}
-				mins += (secs / 60);
-				secs = (secs % 60);
-				var n = mins.toString() + ":" + secs.toString();
-				return n;
+				var mins = Math.floor(secs / 60);
+				var secss = secs - mins * 60;
+				return mins + ':' + secss;
 			}
 			
 			function generalcal(d) {
