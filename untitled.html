@@ -74,7 +74,7 @@
 				}
 				var mins = Math.floor(secs / 60);
 				var secss = secs - mins * 60;
-				return mins + ':' + secss;
+				return parseInt(mins) + ':' + parseInt(secss);
 			}
 			
 			function generalcal(d) {
